@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="styles/table.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="action_container">
+      <button id="start_pause_btn">start</button>
+      <button id="stop_btn">stop</button>
+    </div>
+    <span class="list_counter"> 0 </span>
+    <div>
+      <div class="container">
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Data Length</th>
+                <th>Data</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="footer-group">
+          <label data-pageview
+            >Showing Page <span id="page_indicator"> </span
+          ></label>
+          <div class="btn-group">
+            <button id="prev" data-prevbtn>Previous</button>
+            <button id="next" data-nextbtn>Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader-overlay">
+      <div class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script
+      src="https://replit.com/public/js/replit-badge.js"
+      theme="blue"
+      defer
+    ></script>
+  </body>
+</html>
